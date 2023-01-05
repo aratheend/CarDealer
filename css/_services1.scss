@@ -1,0 +1,654 @@
+@import '_color';
+
+#service {
+    background-image: url(../photo/service1.webp);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: left top;
+    padding: 12.5rem 0;
+    position: relative;
+    width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    .text {
+        color: white;
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+
+        h1 {
+            width: 40%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .home {
+            width: 60%;
+            text-transform: capitalize;
+            font-size: 17px;
+            font-weight: 600;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+        }
+    }
+}
+
+// ==========================================
+
+#car {
+    // height: 85vh;
+    padding: 7rem 0;
+
+    .box1 {
+        border-style: solid;
+        border-width: 0px 1.5px 1.5px 0px;
+        border-color: #DEDEDE;
+        transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 20px 30px;
+    }
+
+    .box2 {
+        border-style: solid;
+        border-width: 0px 1.5px 1.5px 0px;
+        border-color: #DEDEDE;
+        transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 20px 30px;
+    }
+
+    .box3 {
+        border-style: solid;
+        border-width: 0px 0px 1.5px 0px;
+        border-color: #DEDEDE;
+        transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 20px 30px;
+    }
+
+    .box4 {
+        border-style: solid;
+        border-width: 0px 1.5px 0px 0px;
+        border-color: #DEDEDE;
+        transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 20px 30px;
+    }
+
+    .box5 {
+        border-style: solid;
+        border-width: 0px 1.5px 0px 0px;
+        border-color: #DEDEDE;
+        transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 20px 30px;
+    }
+
+    .box6 {
+        border-style: solid;
+        border-width: 0px 0px 0px 0px;
+        border-color: #DEDEDE;
+        transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 20px 30px;
+    }
+
+    i {
+        color: $overlay-red;
+        font-size: 28px;
+    }
+
+    h6 {
+        color: $black;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+
+    p {
+        color: $grey;
+    }
+
+}
+
+// =============================================
+
+#number {
+    background-image: url(../photo/number.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 5rem 0;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+
+    }
+
+    .line {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        color: $white;
+        z-index: 1;
+
+        h6 {
+            font-weight: 470;
+            font-size: 18px;
+            
+        }
+
+        i {
+            font-size: 40px;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 5px;
+            position: relative;
+            font-size: 47px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 5px;
+                left: -70px;
+                height: 50px;
+                width: 1px;
+                background-color: $white;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 5px;
+                left: -75px;
+                height: 30px;
+                width: 1px;
+                background-color: $white;
+            }
+        }
+
+    }
+
+}
+
+// ==============================================
+
+#provide {
+    // height: 100vh;
+    padding-top: 80px;
+
+    .text {
+        h5 {
+            line-height: 30px;
+        }
+
+        p {
+            color: $grey;
+        }
+
+        i {
+            color: $overlay-red;
+        }
+
+        span {
+            color: $grey;
+        }
+
+    }
+}
+
+// ================================================
+
+#send {
+    height: 100vh;
+    text-align: center;
+    margin-top: 5rem;
+
+    P {
+        color: $grey;
+    }
+
+    h1 {
+        margin-bottom: 100px;
+    }
+
+    .name {
+
+        input {
+            background-color: #F6F6F6;
+            border: none;
+            margin: 10px 0;
+            text-align: left;
+            padding: 8px 30px 8px 10px;
+            outline: none;
+
+            &:focus {
+                outline: 1px solid $dark-red
+            }
+
+            &:nth-child(2) {
+                margin: 0 10px;
+            }
+
+            &:nth-child(4) {
+                padding: 0.5rem 2rem 12rem 0.5rem;
+            }
+        }
+
+        .send {
+            text-align: left !important;
+            margin-top: 15px;
+            border: none;
+            padding: 8px 35px;
+            color: $white;
+            background-color: $dark-red;
+            transition: 0.5s ease-in-out;
+            align-items: flex-start !important;
+
+            &:hover {
+                background-color: $button;
+            }
+        }
+    }
+
+    .open {
+        background-color: #F6F6F6;
+        // margin: 10px;
+        padding: 20px 10px;
+        align-items: center;
+
+        h6 {
+            text-align: left;
+            padding: 20px 0 15px 15px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                background: $dark-red;
+                bottom: 5px;
+                left: 12px;
+            }
+        }
+
+
+
+        .week {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+
+            li {
+                display: flex;
+
+                .day {
+                    width: 50%;
+                    font-weight: 550;
+                }
+
+                .time {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media(max-width: 575px) {
+    #service {
+
+        .text {
+            bottom: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h1 {
+                font-size: 20px;
+                text-align: center;
+                margin: 0;
+                padding: 0 0 10px 0;
+                width: 100%;
+            }
+
+            .home {
+                font-size: 17px;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+
+    }
+
+    #car {
+        width: 100%;
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .box1,
+        .box2,
+        .box4,
+        .box5 {
+            border-right-width: 0;
+        }
+
+        .box5,
+        .box6 {
+            border-top-width: 1.5px;
+        }
+    }
+
+    #number {
+        width: 100%;
+
+        .line {
+            text-align: left;
+            padding-left: 30px;
+            width: 100%;
+
+            h6 {
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 20px 0;
+            }
+
+            h1 {
+                display: inline-block;
+            }
+        }
+    }
+
+    #provide {
+        width: 100%;
+
+        .text {
+            display: block;
+
+            h5 {
+                font-size: 18px;
+                font-weight: 650;
+                display: block;
+                text-align: left;
+                width: 100%;
+            }
+
+            p {
+                text-align: left;
+                margin-bottom: 25px;
+            }
+
+            span {
+                line-height: 15px;
+            }
+        }
+
+        .img {
+            img {
+                display: inline-block;
+                max-width: 100%;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    #send {
+        .name {
+            input {
+                width: 100% !important;
+
+                &:nth-child(2) {
+                    margin: 0;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767px) {
+    #service {
+
+        .text {
+            bottom: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h1 {
+                font-size: 20px;
+                text-align: center;
+                margin: 0;
+                padding: 0 0 10px 0;
+                width: 100%;
+            }
+
+            .home {
+                font-size: 17px;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+    #car {
+        .box1,
+        .box2,
+        .box4,
+        .box5 {
+            border-right-width: 0;
+        }
+
+        .box5,
+        .box6 {
+            border-top-width: 1.5px;
+        }
+    }
+
+    #number {
+        .line {
+            margin-right: 100px;
+            margin-bottom: 25px;
+            padding-left: 25px;
+
+            h6 {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            i {
+                font-size: 35px;
+            }
+
+            h1 {
+                font-weight: 700;
+            }
+        }
+    }
+
+
+    #provide {
+        width: 100%;
+
+        .text {
+            display: block;
+
+            h5 {
+                font-size: 18px;
+                font-weight: 650;
+                display: block;
+                text-align: left;
+                width: 100%;
+            }
+
+            p {
+                text-align: left;
+                margin-bottom: 25px;
+            }
+
+            span {
+                line-height: 15px;
+            }
+        }
+
+        .img {
+            img {
+                display: inline-block;
+                max-width: 100%;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    #send {
+        width: 100%;
+        height: 400px;
+
+        .name {
+            margin: 0 -15px 0 -15px;
+
+            input {
+                width: 100% !important;
+
+                &:nth-child(2) {
+                    margin: 0;
+                }
+            }
+        }
+
+        .open {
+            height: 18rem;
+            width: 100% !important;
+
+            .week {
+                li {
+                    .day {
+                        font-size: 14px;
+                        padding-left: 5px;
+                    }
+
+                    .time {
+                        color: $grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    #service {
+        .text {
+            width: 95%;
+
+        }
+    }
+
+    #number {
+        .line {
+            width: 50%;
+            padding-left: 40px;
+
+            &:nth-child(1) {
+                margin-bottom: 20px;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                font-size: 14px;
+            }
+
+            i {
+                font-size: 34px;
+            }
+        }
+    }
+
+    #send {
+        .name {
+            input {
+                width: 100% !important;
+
+                &:nth-child(2) {
+                    margin: 0;
+                }
+            }
+        }
+
+        .open {
+            height: 18rem;
+            margin: 0;
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    #service {
+        .text {
+            width: 95%;
+            bottom: 20px;
+        }
+    }
+
+    #number {
+        .line {
+            padding-left: 20px;
+            h6 {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-weight: 500;
+            }
+        }
+    }
+
+    #send {
+        .name {
+            input {
+                &:nth-child(2) {
+                    margin: 0 15px;
+                }
+            }
+        }
+
+        .open {
+            height: 18rem;
+            margin: 0;
+        }
+    }
+}

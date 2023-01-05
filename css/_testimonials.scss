@@ -1,0 +1,146 @@
+@import "_color";
+body {
+  font-family: "Open Sans", sans-serif;
+}
+#testimonials {
+  padding: 0 10rem 5rem 10rem;
+  margin-top: 10rem;
+  .testimonial-box {
+    background-color: $light-grey;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &:hover {
+      .testimonial-img {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .testimonial-text {
+        i {
+          color: $dark-red;
+        }
+      }
+    }
+    .testimonial-img {
+      overflow: hidden;
+      img {
+        width: 100%;
+        transform: scale(1);
+        transition: 0.8s ease-in-out;
+      }
+    }
+    .testimonial-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      color: $grey;
+      img {
+        width: 80px;
+        border-radius: 50%;
+        border: 5px solid $white;
+        position: absolute;
+        top: -22%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .name {
+        margin-top: 40px;
+        color: $dark-red;
+        font-size: 17px;
+      }
+      .role {
+        font-size: 15px;
+        line-height: 15px;
+        position: relative;
+        margin-top: 5px;
+        &::before {
+          content: "";
+          position: absolute;
+          right: 105%;
+          top: 0;
+          height: 100%;
+          width: 1px;
+          background-color: $grey;
+        }
+      }
+      p {
+        width: 85%;
+        font-size: 15px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      i {
+        font-size: 35px;
+        margin-bottom: 20px;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+  .path {
+    ul {
+      li {
+        a {
+          display: inline-block;
+          padding: 8px 15px;
+          color: $grey;
+          border: 1px solid rgba(128, 128, 128, 0.3);
+          font-size: 15px;
+          text-decoration: none;
+          margin-right: 10px;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background-color: $dark-red;
+            color: white;
+            border: 1px solid $dark-red;
+          }
+
+          i {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  #testimonials {
+    margin-top: 14rem;
+    padding-inline: 0;
+    .testimonial-box {
+      .testimonial-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #testimonials {
+    padding-inline: 0;
+    .testimonial-box {
+      .testimonial-img {
+        img {
+          width: 100%;
+        }
+      }
+      .testimonial-text {
+        p {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #testimonials {
+    padding-inline: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #testimonials {
+    padding-inline: 0;
+  }
+}
