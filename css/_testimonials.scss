@@ -2,9 +2,57 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+#background {
+  background-image: url("../photo/feature-car-bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 12rem 0;
+  position: relative;
+  .overlay {
+    padding-inline: 145px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.653);
+    display: flex;
+    align-items: flex-end;
+    .floating {
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+      .direction {
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            color: $dark-red;
+          }
+          i {
+            margin-right: 5px;
+          }
+        }
+        span {
+          font-size: 14px;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
 #testimonials {
   padding: 0 10rem 5rem 10rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
   .testimonial-box {
     background-color: $light-grey;
     overflow: hidden;
@@ -105,6 +153,18 @@ body {
 }
 
 @media (max-width: 575px) {
+  #background {
+    .overlay {
+      .floating {
+        .title {
+          h1 {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+
   #testimonials {
     margin-top: 14rem;
     padding-inline: 0;
@@ -117,7 +177,23 @@ body {
     }
   }
 }
+
 @media (min-width: 576px) and (max-width: 767px) {
+  #background {
+    margin-top: 100px;
+    .overlay {
+      align-items: center;
+      .floating {
+        flex-direction: column;
+        .title {
+          h1 {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+
   #testimonials {
     padding-inline: 0;
     .testimonial-box {
@@ -134,11 +210,25 @@ body {
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
+  #background {
+    .overlay {
+      .floating {
+        .title {
+          h1 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
   #testimonials {
     padding-inline: 0;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   #testimonials {
     padding-inline: 0;
